@@ -1,15 +1,19 @@
+/* Variaveis do HTML */
+
 const contentField = document.querySelector(".content");
 
-window.onload = () => {
+/* Variaveis de auxilio */
 
-    callApi()
-};
 
-/* Requisicao da API Pexels */
+/* Requisicao da API Pexels e Carregar Imagens na Pagina Inicial*/
 
-function callApi() {
+function callApi(page) {
 
-    fetch("https://api.pexels.com/v1/curated?page=1&per_page=40", {
+    let requestLink = "https://api.pexels.com/v1/curated?page=" + page + "&per_page=40";
+
+    //console.log(requestLink);
+
+    fetch("https://api.pexels.com/v1/curated?page=" + page + "&per_page=30", {
 
         headers: {
             Authorization: "jqDZqFprHkb1ogjEnn2znvwY51wjSULFfs3WltTeVLqIZIJoLNffspjF"
@@ -41,4 +45,3 @@ function callApi() {
 
 
 };
-

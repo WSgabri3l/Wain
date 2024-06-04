@@ -9,11 +9,11 @@ body{
     display: flex;
 }
 
-.content{
+.content, .content-search{
     align-items: center;
     columns: 20 20rem;
     column-gap: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 img{
