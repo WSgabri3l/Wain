@@ -33,12 +33,19 @@ function callApi(page) {
 
         for (let index = 0; index < photos.length; index++) {
 
+            /* URL da Imagem */
             let source = photos[index].src.original;
+
+            let imgDiv = document.createElement("div");
+            imgDiv.className = "image-main";
 
             let imgElement = document.createElement("img");
             imgElement.src = source;
+            imgElement.id = "image-main-source";
 
-            contentField.appendChild(imgElement);
+            /* ---- */
+            imgDiv.appendChild(imgElement);
+            contentField.appendChild(imgDiv);
             
         }
     })
