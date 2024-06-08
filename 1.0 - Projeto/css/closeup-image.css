@@ -1,0 +1,39 @@
+/* Divs */
+
+/* Imagem */
+
+.closeup-image{
+    display: flex;
+}
+
+.closeup-image-expanded{
+    width: 45%;
+    height: 100%;
+    border-right: solid #000 3px;
+}
+
+.closeup-image-informations{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Informacoes */
+
+.closeup-image-informations-buttons, .closeup-image-informations-title, .closeup-image-informations-author{
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+/* Imagem */
+
+#closeup-image-expanded-src{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Informacoes */

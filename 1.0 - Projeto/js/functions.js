@@ -2,6 +2,8 @@
 
 //Funcao que identifica a posicao do Scroll da Pagina
 
+const modalLever = "image-main-modal-show";
+
 function userReachedBottom() {
 
     //scrollY retorna a quantidade de Pixels que foi "scrollada" para cima ou para baixo.
@@ -20,4 +22,16 @@ function userReachedBottom() {
         return true
 
     }
+}
+
+function openModal(div, lever) {
+
+    div.classList.add(lever);
+
+}
+
+function closeModal(div, lever){
+
+    div.classList.remove(lever);
+
 }
