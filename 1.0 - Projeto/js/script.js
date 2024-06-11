@@ -33,6 +33,8 @@ function callApi(page) {
 
     .then(photos => {
 
+        console.log(photos);
+        
         for (let index = 0; index < photos.length; index++) {
 
             /* URL da Imagem */
