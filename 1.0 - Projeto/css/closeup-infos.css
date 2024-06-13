@@ -58,12 +58,13 @@
 /*Div do Titulo*/
 .closeup-image-informations-title{
     display: flex;
+    align-items: center;
 }
 
 /*H1 do Titulo*/
 
 #title-placeholder{
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 15px;
     margin-top: 5px;
 }
@@ -80,8 +81,8 @@
     display: flex;
     width: 50%;
     height: 50px;
-    gap: 5px;
-    margin-left: 15px;
+    gap: 7px;
+    margin-left: 13px;
     margin-top: 10px;
 }
 
@@ -99,6 +100,22 @@
 /*Div*/
 
 .closeup-author-link{
-    background-color: #fff;
+    background-color: #234006;
+    width: 65px;
+    height: 40px;
     margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeup-author-link{
+    cursor: pointer;
+}
+
+#link-placeholder{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
 }

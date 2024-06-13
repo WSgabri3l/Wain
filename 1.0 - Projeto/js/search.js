@@ -81,6 +81,7 @@ function searchImages(query, field, page) {
 
             let modalSave = document.createElement("button");
             modalSave.id = "modal-save";
+            modalSave.className = "modal-button";
             modalSave.textContent = "SALVAR";
 
             let modalOtherDiv = document.createElement("div");
@@ -88,20 +89,24 @@ function searchImages(query, field, page) {
 
             let modalThreeDots = document.createElement("button");
             modalThreeDots.id = "modal-dots";
+            modalThreeDots.className = "modal-button";
 
             /* Imagem dos 3 Pontos */
             let modalThreeDotsImg = document.createElement("img");
             modalThreeDotsImg.id = "modal-dots-image";
+            modalThreeDotsImg.className = "modal-button";
             modalThreeDotsImg.src = "../img/buttons/dots.jpg";
 
             modalThreeDots.appendChild(modalThreeDotsImg);
 
             let modalDownload = document.createElement("button");
             modalDownload.id = "modal-download";
+            modalDownload.className = "modal-button";
 
             /* Imagem de Download */
             let modalDownloadImg = document.createElement("img");
             modalDownloadImg.id = "modal-download-image";
+            modalDownloadImg.className = "modal-button";
             modalDownloadImg.src = "../img/buttons/download-icon.png";
 
             modalDownload.appendChild(modalDownloadImg);
@@ -117,6 +122,20 @@ function searchImages(query, field, page) {
             imgDiv.addEventListener("mouseout", (event) =>{
 
                 closeModal(imgModal, modalLever)
+
+            });
+
+            /* Evento de mudar de pagina e salvar informacoes no cache */
+
+            imgDiv.addEventListener("click", (event) =>{
+
+                if (!event.target.matches(".modal-button")) {
+                    
+                    saveInfo(source, photos[index].alt, photos[index].photographer, photos[index].photographer_url);
+
+                    window.location.href = "closeup.html";
+                        
+                }
 
             });
 
