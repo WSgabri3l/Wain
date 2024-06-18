@@ -75,7 +75,7 @@ function callApi(page) {
             let modalThreeDotsImg = document.createElement("img");
             modalThreeDotsImg.id = "modal-dots-image";
             modalThreeDotsImg.className = "modal-button";
-            modalThreeDotsImg.src = "../img/buttons/dots.jpg";
+            modalThreeDotsImg.src = "../img/buttons/dots-icon-closeup.png";
 
             modalThreeDots.appendChild(modalThreeDotsImg);
 
@@ -87,7 +87,7 @@ function callApi(page) {
             let modalDownloadImg = document.createElement("img");
             modalDownloadImg.id = "modal-download-image";
             modalDownloadImg.className = "modal-button";
-            modalDownloadImg.src = "../img/buttons/download-icon.png";
+            modalDownloadImg.src = "../img/buttons/download-icon-closeup.png";
 
             modalDownload.appendChild(modalDownloadImg);
 

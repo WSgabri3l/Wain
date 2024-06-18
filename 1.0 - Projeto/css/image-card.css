@@ -12,11 +12,17 @@
     border-radius: 10px;
 }
 
+.image-content:hover{
+    cursor:zoom-in;
+}
+
 /* Imagem */
 #image-main-field-source{
     width: 100%;
     border-radius: 10px;
 }
+
+/* ------------------------------------------------------------------------------------ */
 
 /* Modal */
 .image-main-modal{
@@ -42,7 +48,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    
 }
 
 /* Modal Botoes */
@@ -56,6 +61,11 @@
     font-size: 20px;
 }
 
+#modal-save:hover{
+    cursor: pointer;
+    background-color: #969B11;
+}
+
 #modal-dots, #modal-download{
     background-color: #fff;
     width: 40px;
@@ -64,6 +74,11 @@
     margin-bottom: 20px;
     border-radius: 100%;
     border-style: none;
+}
+
+#modal-dots:hover, #modal-download:hover{
+    cursor: pointer;
+    background-color: #424250;
 }
 
 #modal-dots-image, #modal-download-image{

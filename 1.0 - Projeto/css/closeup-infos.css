@@ -46,6 +46,11 @@
     font-size: 20px;
 }
 
+#closeup-save:hover{
+    cursor: pointer;
+    background-color: #969B11;
+}
+
 /*Imagens*/
 #closeup-download-img, #closeup-dots-img{
     width: 90%;
@@ -110,6 +115,11 @@
     align-items: center;
 }
 
+.closeup-author-link:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
 .closeup-author-link{
     cursor: pointer;
 }
@@ -118,4 +128,8 @@
     text-decoration: none;
     font-size: 20px;
     color: #fff;
+}
+
+#link-placeholder:hover{
+    color: #000;
 }

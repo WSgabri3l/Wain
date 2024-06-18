@@ -31,6 +31,12 @@ queryField.addEventListener("keypress", (event) =>{
 
 });
 
+function searchBar(query, searchBar) {
+
+    searchBar.textContent = query;
+    
+}
+
 function searchImages(query, field, page) {
 
     let requestLink = "https://api.pexels.com/v1/search??page=" + page + "&locale=pt-BR&per_page=30&query=" + query;
@@ -95,7 +101,7 @@ function searchImages(query, field, page) {
             let modalThreeDotsImg = document.createElement("img");
             modalThreeDotsImg.id = "modal-dots-image";
             modalThreeDotsImg.className = "modal-button";
-            modalThreeDotsImg.src = "../img/buttons/dots.jpg";
+            modalThreeDotsImg.src = "../img/buttons/dots-icon-closeup.png";
 
             modalThreeDots.appendChild(modalThreeDotsImg);
 
@@ -107,7 +113,7 @@ function searchImages(query, field, page) {
             let modalDownloadImg = document.createElement("img");
             modalDownloadImg.id = "modal-download-image";
             modalDownloadImg.className = "modal-button";
-            modalDownloadImg.src = "../img/buttons/download-icon.png";
+            modalDownloadImg.src = "../img/buttons/download-icon-closeup.png";
 
             modalDownload.appendChild(modalDownloadImg);
 
