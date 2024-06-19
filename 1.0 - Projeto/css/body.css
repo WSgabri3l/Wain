@@ -9,17 +9,9 @@ body{
     display: flex;
 }
 
-.content, .content-search{
+.content, .content-search, .content-closeup{
     align-items: center;
     columns: 20 20rem;
     column-gap: 10px;
     margin: 20px;
 }
-
-img{
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-

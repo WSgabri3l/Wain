@@ -1,0 +1,135 @@
+/*Div Em que todos os botoes se encontram*/
+
+/*Botoes*/
+
+.closeup-image-informations-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Div dos Botoes de Download e 3 Pontos*/
+.closeup-buttons{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+/*Div do Botao de Salvar*/
+.closeup-buttons-save{
+    margin: 10px;
+}
+
+/*Botoes de Download e 3 Pontos*/
+#closeup-download, #closeup-dots{
+    background-color: #74A608;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+#closeup-download:hover, #closeup-dots:hover{
+    background-color: #5B8207;
+    cursor: pointer;
+}
+
+/*Botao de Salvamento*/
+
+#closeup-save{
+    background-color: #EBF21B;
+    width: 65px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#closeup-save:hover{
+    cursor: pointer;
+    background-color: #969B11;
+}
+
+/*Imagens*/
+#closeup-download-img, #closeup-dots-img{
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+}
+
+/*Titulo*/
+
+/*Div do Titulo*/
+.closeup-image-informations-title{
+    display: flex;
+    align-items: center;
+}
+
+/*H1 do Titulo*/
+
+#title-placeholder{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+/*Informacoes do autor da Fotografia*/
+
+.closeup-image-informations-author{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Inicial e Nome*/
+.closeup-author-left{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    gap: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+/*Inicial*/
+#initial-placeholder{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+/*Link para o Perfil do Autor*/
+
+/*Div*/
+
+.closeup-author-link{
+    background-color: #234006;
+    width: 65px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeup-author-link:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.closeup-author-link{
+    cursor: pointer;
+}
+
+#link-placeholder{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+#link-placeholder:hover{
+    color: #000;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript -->
+    <script src="js/functions.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script src="js/closeup.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/image-card.css">
+
+    <link rel="stylesheet" href="css/closeup.css">
+    <link rel="stylesheet" href="css/closeup-image.css">
+    <link rel="stylesheet" href="css/closeup-infos.css">
+    <link rel="stylesheet" href="css/closeup-comments.css">
+    <link rel="stylesheet" href="css/closeup-comments-made.css">
+
+    <title>Wain</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-title.png">
+
+</head>
+<body>
+
+    <header id="header">
+
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div id="barraPesquisa">
+            <input id="pesquisar" type="text" placeholder="Pesquisar...">
+        </div>
+        <div class="navBotoes">
+            <button onclick="location.href='index.html'">Inicio</button>
+            <button onclick="location.href='explorar.html'">Explorar</button>
+            <div class="perfil">
+                <img src="img/perfil2.jpg" alt="Perfil">
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container">
+
+        <div class="content-image">
+
+            <!-- Aqui ficara a Div onde se encontrara a imagem expandida -->
+
+            <div class="closeup-main">
+
+                <!-- Saida da Pagina -->
+                <div class="closeup-return">
+                    <button id="return-button" onclick="location.href='index.html'">
+                        <img src="img/buttons/arrow-return.png" id="return-button-image">
+                    </button>
+                </div>
+                
+                <!-- Imagem Expandida, Informacoes e Comentarios -->
+                <div class="closeup-image">
+
+                    <div class="closeup-image-expanded">
+                        <img src="" id="closeup-image-expanded-src">
+                    </div>
+
+                    <div class="closeup-image-informations">
+
+                        <!-- Botoes -->
+                        <div class="closeup-image-informations-buttons">
+                            <div class="closeup-buttons">
+
+                                <div class="closeup-buttons-download">
+
+                                    <button id="closeup-download">
+                                        <img id="closeup-download-img" src="img/buttons/download-icon-closeup.png" alt="">
+                                    </button>
+    
+                                </div>
+    
+                                <div class="closeup-buttons-three-dots">
+    
+                                    <button id="closeup-dots">
+                                        <img id="closeup-dots-img" src="img/buttons/dots-icon-closeup.png" alt="">
+                                    </button>
+    
+                                </div>
+                            </div>
+
+                            <div class="closeup-buttons-save">
+
+                                <button id="closeup-save">
+                                    Salvar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Titulo -->
+                        <div class="closeup-image-informations-title">
+                            <h1 id="title-placeholder"></h1>
+                        </div>
+
+                        <!-- Autor -->
+                        <div class="closeup-image-informations-author">
+
+                            <div class="closeup-author-left">
+
+                                <div class="closeup-author-initial">
+                                    <button id="initial-placeholder"></button>
+                                </div>
+    
+                                <div class="closeup-author-name">
+                                    <h1 id="name-placeholder"></h1>
+                                </div>
+
+                            </div>
+                            
+                            <div class="closeup-author-link">
+
+                                <a id="link-placeholder" href="">Seguir</a>
+
+                            </div>
+                        </div>
+
+                        <!-- Secao de Comentarios da Imagem -->
+
+                        <div class="closeup-comments">
+
+                            <div class="closeup-comments-others">
+
+                                <div class="closeup-comments-others-header">
+                                    <h1 id="comments-header">Comentários</h1>
+                                </div>
+
+                                <div class="closeup-comments-others-content">
+
+                                    <div class="commented">
+
+                                        <!-- Icon -->
+                                        <div class="commented-icon">
+                                            <button id="commented-icon-image"></button>                                           
+                                        </div>
+
+                                        <div class="commented-text">
+                                            <p id="commeted-username">User_1<span id="commented-comment"> Nice image for sure</span></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="closeup-comments-user">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Saida da Pagina -->
+                <div class="closeup-extra">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-closeup">
+            
+        </div>
+    </div>
+
+</body>
+</html>

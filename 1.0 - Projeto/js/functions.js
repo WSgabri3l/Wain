@@ -2,6 +2,8 @@
 
 //Funcao que identifica a posicao do Scroll da Pagina
 
+const modalLever = "image-main-modal-show";
+
 function userReachedBottom() {
 
     //scrollY retorna a quantidade de Pixels que foi "scrollada" para cima ou para baixo.
@@ -20,4 +22,35 @@ function userReachedBottom() {
         return true
 
     }
+}
+
+/* Funcoes para abrir e fechar o Modal */
+
+function openModal(div, lever) {
+
+    div.classList.add(lever);
+
+}
+
+function closeModal(div, lever){
+
+    div.classList.remove(lever);
+
+}
+
+/* Funcao que salva informacoes sobre a imagem no cache do site */
+
+function saveInfo(imagePath, imageName, author, link) {
+
+    sessionStorage.setItem("imagePath", imagePath);
+    sessionStorage.setItem("imageName", imageName);
+    sessionStorage.setItem("author", author);
+    sessionStorage.setItem("initial", author.slice(0, 1));
+    sessionStorage.setItem("link", link);
+    
+    console.log(sessionStorage.getItem("imagePath"));
+    console.log(sessionStorage.getItem("imageName"));
+    console.log(sessionStorage.getItem("author"));
+    console.log(sessionStorage.getItem("initial"));
+    console.log(sessionStorage.getItem("link"));
 }

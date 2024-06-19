@@ -9,6 +9,8 @@ window.onload = () => {
 
     searchImages(query, contentSearchField, page);
 
+    searchBar(queryField, query);
+
 }
 
 window.addEventListener("scroll", () =>{
