@@ -1,0 +1,92 @@
+/*Divs*/
+
+/* Principal */
+.comments-user{
+    width: 80%;
+    height: 100%;
+}
+
+/* Contador de Comentarios e  Reacoes */
+.comments-user-interactions{
+    width: 100%;
+    height: 30%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Area de Escrita de Texto*/
+.comment-box{    
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-textarea{
+    width: 100%;
+    height: 50px;
+    max-height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    overflow: auto;
+    
+}
+
+.send{
+    width: 10%;
+}
+
+.textarea{
+    width: 90%;
+}
+
+/* Funcionais */
+
+#comments-count, #commets-number{
+    font-size: 25px;
+}
+
+#button-reaction{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+/* Mexendo agora */
+
+#comment-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+
+    border: none;
+    resize: none;
+}
+
+#button-send{
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+#text-input{
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 20px;
+
+    resize: none;
+    border-style: none;
+    outline: none;
+}
