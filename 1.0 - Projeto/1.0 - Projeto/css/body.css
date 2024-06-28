@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #74A608;
+    width: 100%;
+    display: flex;
+}
+
+.content, .content-search{
+    align-items: center;
+    columns: 20 20rem;
+    column-gap: 10px;
+    margin: 20px;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
