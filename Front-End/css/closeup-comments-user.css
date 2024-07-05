@@ -1,0 +1,121 @@
+/*Divs*/
+
+/* Principal */
+.comments-user{
+    width: 80%;
+    height: 100%;
+}
+
+/* Contador de Comentarios e  Reacoes */
+.comments-user-interactions{
+    width: 100%;
+    height: 30%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Area de Escrita de Texto*/
+.comment-box{    
+    width: 100%;
+    height: 80px;
+
+    padding-top: 5px;
+    margin-top: 30px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*MEXENDO*/
+.comment-textarea{
+    width: 100%;
+    height: 50px;
+    max-height: 150px;
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    overflow: auto;
+}
+/*MEXENDO*/
+
+
+.send{
+    width: 10%;
+}
+
+
+/*MEXENDO*/
+.textarea{
+    width: 90%;
+}
+/*MEXENDO*/
+
+
+/* Funcionais */
+
+#comments-count, #commets-number{
+    font-size: 25px;
+}
+
+#button-reaction{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+/* Mexendo agora */
+
+#comment-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+
+    border: none;
+    resize: none;
+}
+
+#button-send{
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+#button-send:hover{
+    background-color: #5f5f5f;
+    cursor: pointer;
+}
+
+#button-send-img{
+    width: 80%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/*MEXENDO*/
+#text-input{
+    width: 90%;
+    height: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: center;
+
+    resize: none;
+    border-style: none;
+    outline: none;
+}
+
+#text-input::-webkit-scrollbar{
+    width: 0px;
+}
+/*MEXENDO*/
