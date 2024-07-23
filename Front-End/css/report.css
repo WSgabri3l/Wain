@@ -1,0 +1,83 @@
+/*REPORT*/
+
+.custom-radio input{
+    display: none;
+}
+
+/* + label:before faz com que a check fique antes do conteudo de texto */
+.custom-radio input + label:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: white;
+    border: 1px solid gray;
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+  
+.custom-radio input:checked + label:before {
+    background-color: white;
+    box-sizing: border-box;
+    border: 5px solid red;
+    padding: 4px;
+}
+
+.report-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.report{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*TITLE*/
+
+.report-title{
+    display: block;
+}
+
+/*BUTTON*/
+
+#cancel{
+    background-color: #234006;
+    color: #fff;
+    width: 85px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+#cancel:hover{
+    cursor: pointer;
+    background-color: #5B8207;
+}
+
+#send-report:hover{
+    cursor: pointer;
+}
+
+#send-report{
+    background-color: #c4d1b7;
+    color: #fff;
+    width: 85px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.report-button-field{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}

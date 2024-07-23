@@ -10,6 +10,8 @@ const link = document.querySelector("#link-placeholder");
 
 const downloadButton = document.querySelector("#closeup-download");
 const dotsButton = document.querySelector("#closeup-dots");
+const dotsReport = document.querySelector("#report");
+const saveButtonCloseup = document.querySelector("#closeup-save");
 
 /* Campos de Comentarios */
 
@@ -84,6 +86,18 @@ dotsButton.addEventListener("click", (event) =>{
         openModal(dotsDropdownDiv, dotsDropdownLever);
 
     }
+});
+
+dotsReport.addEventListener("click", (event) =>{
+
+    openModal(modalReport, modalDropdownLever);
+
+});
+
+saveButtonCloseup.addEventListener("click", (event) =>{
+
+    saveButtonCloseup.style.backgroundColor = "#424250"
+    saveButtonCloseup.textContent = "Salvo";
 });
 
 /* Funcoes da Pagina */

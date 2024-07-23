@@ -9,6 +9,7 @@
     <script src="js/search.js" defer></script>
 
     <script src="js/closeup.js" defer></script>
+    <script src="js/report.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -24,6 +25,8 @@
     <link rel="stylesheet" href="css/closeup-comments-made.css">
     <link rel="stylesheet" href="css/closeup-comments-user.css">
     <link rel="stylesheet" href="css/closeup-dropdown.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/report.css">
 
     <title>Wain</title>
     <link rel="icon" type="image/x-icon" href="img/logo-title.png">
@@ -97,11 +100,11 @@
                                         <div class="dropdown-dots-content">
 
                                             <div class="dropdown-dots-item-div">
-                                                <a class="dropdown-dots-item" href="#">Baixar Imagem</a>
+                                                <a class="dropdown-dots-item" href="#" id="download-dropdown">Baixar Imagem</a>
                                             </div>
                                             
                                             <div class="dropdown-dots-item-div">
-                                                <a class="dropdown-dots-item" href="#">Denunciar Imagem</a>
+                                                <a class="dropdown-dots-item" id="report" href="#">Denunciar Imagem</a>
                                             </div>
 
                                         </div>
@@ -260,6 +263,69 @@
 
         <div class="content-closeup">
             
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+
+            <div class="report-container">
+
+                <div class="report-title">
+                    <h1>Denunciar Imagem</h1>
+                </div>
+
+                <div class="report">
+
+                    <div class="custom-radio">
+                        <input id="radio-1" name="question" value="1" type="radio">
+                        <label for="radio-1">Spam</label>
+                    </div>
+                      
+                    <div class="custom-radio">
+                        <input id="radio-2" name="question" value="2" type="radio">
+                        <label for="radio-2">Nudez, pornografia ou conteúdo sexualizado</label>
+                    </div>
+
+                    <div class="custom-radio">
+                        <input id="radio-3" name="question" value="3" type="radio">
+                        <label for="radio-3">Autoagressão</label>
+                    </div>
+
+                    <div class="custom-radio">
+                        <input id="radio-4" name="question" value="4" type="radio">
+                        <label for="radio-4">Violência explícita</label>
+                    </div>
+
+                    <div class="custom-radio">
+                        <input id="radio-5" name="question" value="5" type="radio">
+                        <label for="radio-5">Minha propriedade intelectual</label>
+                    </div>
+
+                </div>
+
+                <div class="report-button">
+                    
+                    <div class="report-button-field">
+
+                        <div class="button-actions">
+                            <button id="cancel">
+                                Cancelar
+                            </button>
+                        </div>
+
+                        <div class="button-actions">
+                            <button id="send-report" onclick="location.href='sorry.html'" disabled>
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
         </div>
     </div>
 

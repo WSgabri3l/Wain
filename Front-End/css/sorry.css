@@ -1,0 +1,26 @@
+.container{
+    background-color: #74A608;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-sorry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-paragraph{
+    width: 50%;
+    height: 40%;
+}

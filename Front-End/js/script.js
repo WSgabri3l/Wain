@@ -60,6 +60,11 @@ function callApi(page) {
             modalSave.className = "modal-button";
             modalSave.textContent = "SALVAR";
 
+            modalSave.addEventListener("click", (event) =>{
+                modalSave.style.backgroundColor = "#424250"
+                modalSave.textContent = "Salvo";
+            });
+
             let modalOtherDiv = document.createElement("div");
             modalOtherDiv.className = "modal-other-div";
 
@@ -90,12 +95,12 @@ function callApi(page) {
             //Opcoes do Dropdown
             let dropdownItemDownload = document.createElement("a");
             dropdownItemDownload.className = "dropdown-dots-item";
-            dropdownItemDownload.href = "#";
+            
             dropdownItemDownload.textContent = "Baixar Imagem";
 
             let dropdownItemReport = document.createElement("a");
             dropdownItemReport.className = "dropdown-dots-item";
-            dropdownItemReport.href = "#";
+            
             dropdownItemReport.textContent = "Denunciar Imagem";
 
             //Appends
